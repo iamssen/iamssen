@@ -1,4 +1,6 @@
-### Hi there 👋
+### Seo Yeon, Lee 👋
+
+- My Notion page: <https://www.notion.so/ssen/Seo-Yeon-Lee-05a095128bbc47c4840df1ad6a0bbd73>
 
 <!--
 **iamssen/iamssen** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
