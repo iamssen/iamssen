@@ -48,7 +48,7 @@
   
 </details>
 
-### Research
+### 🔬 Research
 
 - [Analysis JavaScript with V8 Engine](https://github.com/iamssen/analysis-javascript-with-v8-engine)
 - [Http study with Node.js TCP Socket](https://github.com/iamssen/http-study-with-node-socket)
