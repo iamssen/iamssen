@@ -4,6 +4,7 @@
   - [templates and examples](https://github.com/rocket-hangar/rocket-punch-templates)
 - [`rocket-scripts`](https://github.com/rocket-hangar/rocket-scripts) React development scripts for web apps and electron apps (similar to react-scripts)
   - [templates and examples](https://github.com/rocket-hangar/rocket-scripts-templates)
+- [`handbook`](https://github.com/rocket-hangar/handbook) API Documentation toolchain
 - [`generate-github-directory`](https://github.com/rocket-hangar/generate-github-directory) Generate files by Github subdirectory URL
 - [`markdown-source-import`](https://github.com/iamssen/markdown-source-import) Source code import to markdown files
 - [`couchdb-github-action`](https://github.com/iamssen/couchdb-github-action) Run CouchDB on Github Action
