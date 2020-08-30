@@ -9,8 +9,7 @@
 - [`markdown-source-import`](https://github.com/iamssen/markdown-source-import) Source code import to markdown files
 - [`couchdb-github-action`](https://github.com/iamssen/couchdb-github-action) Run CouchDB on Github Action
 - [`vscode-touchbar`](https://github.com/iamssen/vscode-touchbar) Macbook TouchBar support extension for VSCode
-- [`@ssen/prettier-config`](https://github.com/iamssen/prettier-config)
-- [`@ssen/eslint-config`](https://github.com/iamssen/eslint-config)
+- [`@ssen/eslint-config`, `@ssen/prettier-config`](https://github.com/iamssen/convention)
 
 <details>
 <summary><strong>deprecated</strong></summary>
