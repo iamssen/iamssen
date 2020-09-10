@@ -4,6 +4,7 @@
   - [templates and examples](https://github.com/rocket-hangar/rocket-punch-templates)
 - [`rocket-scripts`](https://github.com/rocket-hangar/rocket-scripts) React development scripts for web apps and electron apps (similar to react-scripts)
   - [templates and examples](https://github.com/rocket-hangar/rocket-scripts-templates)
+- [`openapi-typescript-generator`](https://github.com/rocket-hangar/openapi-typescript-generator) OpenAPI TypeScript Fetch Client Generator
 - [`handbook`](https://github.com/rocket-hangar/handbook) API Documentation toolchain
 - [`generate-github-directory`](https://github.com/rocket-hangar/generate-github-directory) Get a Github directory quickly by a simple command
 - [`couchdb-github-action`](https://github.com/iamssen/couchdb-github-action) Run CouchDB on Github Action
