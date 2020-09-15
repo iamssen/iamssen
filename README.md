@@ -50,6 +50,7 @@
 
 ### 🔬 Research
 
+- [Automate WCAG Contrast Ratio Validation with Git Pre-Commit, Github Action](https://github.com/iamssen/wcag-contrast-validation-example)
 - [Analysis JavaScript with V8 Engine](https://github.com/iamssen/analysis-javascript-with-v8-engine)
 - [Http study with Node.js TCP Socket](https://github.com/iamssen/http-study-with-node-socket)
 - [Deep Learning Study](https://github.com/iamssen/deep-learning-study)
