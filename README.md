@@ -58,6 +58,5 @@
 
 ### 🙋🏻‍♂️ Me
 
-- 📒 [Dev Logs](https://www.notion.so/ssen/Seo-Yeon-Lee-05a095128bbc47c4840df1ad6a0bbd73)
 - 🛠 <https://www.npmjs.com/~ssen>
 - 🎨 <https://www.behance.net/ssen>
