@@ -7,7 +7,7 @@
 - [`openapi-typescript-generator`](https://github.com/rocket-hangar/openapi-typescript-generator) OpenAPI TypeScript Fetch Client Generator
 - [`multiplerun`](https://github.com/rocket-hangar/multiplerun) Run multiple terminals (or iTerm split panes) at once
 - [`handbook`](https://github.com/rocket-hangar/handbook) API Documentation toolchain
-- [`generate-github-directory`](https://github.com/rocket-hangar/generate-github-directory) Get a Github directory quickly by a simple command
+- [`copy-github-directory`](https://github.com/rocket-hangar/copy-github-directory) Get a Github directory quickly by a simple command
 - [`couchdb-github-action`](https://github.com/iamssen/couchdb-github-action) Run CouchDB on Github Action
 - [`vscode-touchbar`](https://github.com/iamssen/vscode-touchbar) Macbook TouchBar support extension for VSCode
 - [`@ssen/eslint-config`, `@ssen/prettier-config`](https://github.com/iamssen/convention)
