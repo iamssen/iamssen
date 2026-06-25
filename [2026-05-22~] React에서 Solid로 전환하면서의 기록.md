@@ -25,3 +25,9 @@ Solid.js 2.0이야 그냥 Beta 버전으로 설치해서 사용하면 되지만,
 프로젝트 구조가 너무 복잡해서, 그냥 AI를 활용해 필수적인 부분만 남기고 다 날려버렸다. ESLint Rule과 Test 관련 코드보다 환경 세팅이 지나치게 복잡하게 되어 있었다. 이러니 프로젝트 관리가 버거워질 수밖에...
 
 배포를 하자니 애매해서 일단은 `npm pack`으로 대충 사용 중이다. 
+
+# 2026-06-25
+
+Fork한 `eslint-plugin-solid`는 거의 Rule 관련 코드들만 남기고 전부 다 갈아엎은 것 같다. 배포 자동화도 해 놨고, 이제야 좀 볼 만하게 정리가 된 것 같다. [@ssen/eslint-plugin-solid](https://www.npmjs.com/package/@ssen/eslint-plugin-solid)
+
+이제 Rule들을 하나씩 확인해 봐야 할 것 같다. Solid.js로 개발을 해 본 적도 없는데 ESLint 플러그인을 만들려니 상당히 난감하다.
