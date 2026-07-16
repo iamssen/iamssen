@@ -31,3 +31,23 @@ Solid.js 2.0이야 그냥 Beta 버전으로 설치해서 사용하면 되지만,
 Fork한 `eslint-plugin-solid`는 거의 Rule 관련 코드들만 남기고 전부 다 갈아엎은 것 같다. 배포 자동화도 해 놨고, 이제야 좀 볼 만하게 정리가 된 것 같다. [@ssen/eslint-plugin-solid](https://www.npmjs.com/package/@ssen/eslint-plugin-solid)
 
 이제 Rule들을 하나씩 확인해 봐야 할 것 같다. Solid.js로 개발을 해 본 적도 없는데 ESLint 플러그인을 만들려니 상당히 난감하다.
+
+
+# 2026-07-16
+
+ESLint 플러그인은 일단 작업을 완료했다.
+
+- [x] <https://github.com/iamssen/eslint-plugin-solid>
+  - [x] Legacy ESLint 설정을 모두 제거하고 ESLint v10+ 지원으로 전환
+  - [x] Solid.js 2.0 기준으로 Rule 변경
+- [x] <https://github.com/iamssen/solidjs2-web-prototype>에서 실질 Web App 설정과 동작 테스트 완료
+
+"아오 ㅆ 하기 싫어..."라면서 밍기적거리다가 Codex를 사용하게 되면서 작업이 급진전됐다.
+
+초반 루틴이 잡히기까지는 Codex를 수동으로 운전(?)해 줄 필요가 있지만, 어느 정도 사용자 요청과 Agent 동작이 루틴화되기 시작한 이후에는 "나머지 작업은 알아서 진행해 봐"라는 요청만으로 모든 작업이 잘 진행되더라.
+
+Agent 개발이 매직은 아닌 듯싶다. 기존의 논리적 작업 순서 설계 → 실행 → 검증 루프에서 실행과 검증의 부담이 크게 줄어드는 거지 "논리적 작업 순서 설계"라는 단계를 대체하지는 못한다. (뭐... 토큰을 펑펑 날리면 모르겠지만... ChatGPT Plus 최하 유료 요금제의 Codex 주간 사용량 20%만으로 작업을 끝냈으니 "논리적 작업 순서 설계" 수립에 인간이 적절하게 개입하고 실행, 검증 루프를 Agent에게 맡길 때 재실행 시도는 거의 없는 것으로 보인다.)
+
+어쨌든... 드디어 Solid.js를 사용한 실제 개발 진행이 가능하게 되었다. ESLint 플러그인은 실제 개발을 진행하면서 점진적으로 수정해 나가면 될 것 같고...
+
+뭐... 오랜만에 재밌는 작업이었다.
