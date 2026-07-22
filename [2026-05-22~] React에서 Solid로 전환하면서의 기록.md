@@ -51,3 +51,15 @@ Agent 개발이 매직은 아닌 듯싶다. 기존의 논리적 작업 순서 �
 어쨌든... 드디어 Solid.js를 사용한 실제 개발 진행이 가능하게 되었다. ESLint 플러그인은 실제 개발을 진행하면서 점진적으로 수정해 나가면 될 것 같고...
 
 뭐... 오랜만에 재밌는 작업이었다.
+
+# 2026-07-22
+
+<https://github.com/iamssen/solidjs2-web-prototype>에 Storybook 세팅을 추가했다.
+
+언제나 생각하는 것이지만 Storybook은 무슨 스팸 같다. `npx create-storybook --type=solid` 실행했더니 온갖 것들이 덕지덕지... Vitest 연동, Playwright 연동 기능들은 도대체 왜 설치하는 거야?
+
+[simple-grid]라는 간단한 Grid Component를 Codex를 사용해서 만들었는데, `AGENTS.md`에 요구사항을 좀 디테일하게 적긴 했지만 "아님 말고" 식으로 돌려봤던 게 결과가 너무 잘 나와서 좀 놀랐다.
+
+Solid.js 개발이 React에 비해 자잘하게 번거로운 부분들이 있긴 하지만 대신 아주 만족스러운 부분이 있다. Component function이 딱 한 번만 실행된다는 것. 이건 정말 최고다. React 개발에서 제일 짜증나는 부분이 Component function이 미친 듯이 재실행되는 와중에 Memo를 여기저기 덕지덕지 쑤셔 넣어야 하는 건데, "딱 한 번만 실행된다"라는 동작 원리는 편안함 그 자체다. 속도 때문에 React Compiler니 뭐니 뇌절을 하고 있는 React에 점점 짜증이 나는 중이었어서 Solid.js의 단순함이 주는 편안함이 크게 다가오는 것 같다. 단순한데 심지어 빨라!
+
+[simple-grid]: https://github.com/iamssen/solidjs2-web-prototype/tree/main/apps/app/components/simple-grid
