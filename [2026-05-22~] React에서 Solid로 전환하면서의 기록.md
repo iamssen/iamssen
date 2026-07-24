@@ -63,3 +63,32 @@ Agent 개발이 매직은 아닌 듯싶다. 기존의 논리적 작업 순서 �
 Solid.js 개발이 React에 비해 자잘하게 번거로운 부분들이 있긴 하지만 대신 아주 만족스러운 부분이 있다. Component function이 딱 한 번만 실행된다는 것. 이건 정말 최고다. React 개발에서 제일 짜증나는 부분이 Component function이 미친 듯이 재실행되는 와중에 Memo를 여기저기 덕지덕지 쑤셔 넣어야 하는 건데, "딱 한 번만 실행된다"라는 동작 원리는 편안함 그 자체다. 속도 때문에 React Compiler니 뭐니 뇌절을 하고 있는 React에 점점 짜증이 나는 중이었어서 Solid.js의 단순함이 주는 편안함이 크게 다가오는 것 같다. 단순한데 심지어 빨라!
 
 [simple-grid]: https://github.com/iamssen/solidjs2-web-prototype/tree/main/apps/app/components/simple-grid
+
+# 2026-07-24
+
+```tsx
+function onCancel(handler) {}
+function Confirm(props) {
+  onCancel(() => props.close(undefined));
+  return <button>Confirm</button>;
+}
+```
+
+이런 종류의 코드에서 Reactivity error가 발생해 무슨 일인가 싶어 살펴봤더니 eslint-plugin-solid의 False positive였다.
+
+```js
+'@ssen/solid/reactivity': [
+  'warn',
+  {
+    customCalledFunctionCallbacks: [
+      { callee: 'onCancel', argumentIndex: 0 },
+    ],
+  },
+]
+```
+
+추론이 불가능한 부분이라서 이렇게 옵션을 추가했다. `onCancel()`의 첫 번째 인자로 들어오는 Callback에서는 `props`를 읽어도 괜찮다고 알려준다.
+
+Solid.js의 단순함과 성능을 구현하려면 지켜야 할 제약 사항이 꽤 있고, 그 제약 사항을 Reactivity Rule에서 사전에 검출해야 하는데 그리 간단하지 않아서 False positive는 앞으로도 꽤 많을 것 같다.
+
+뭐... 하나씩 고쳐 나가야지. 별수 있나.
